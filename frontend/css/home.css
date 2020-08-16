@@ -1,11 +1,11 @@
 body{
-    border: 20px solid black;
+    border: 20px solid white;
     padding: 30px;
     margin-top: 50px;
     margin-left: 20px;
     margin-bottom: 20px;
     margin-right: 20px;
-    background-color: rgb(122, 205, 243);
+    background-color: black;
     color:white;
 }
 table,th,tr,td{
