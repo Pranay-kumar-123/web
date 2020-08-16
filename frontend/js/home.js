@@ -27,17 +27,17 @@ $(function(){
           })
     })
   
-   
-    $.ajax({
-        type:"get",
-        url:"/api/users",
-        success:function(data){
-                display(data);
-        },
-        error: (err)=>{
-            console.log("ERROR");
-        }
-    })
+   $("#view").on('click',function(){$.ajax({
+    type:"get",
+    url:"/api/users",
+    success:function(data){
+            display(data);
+    },
+    error: (err)=>{
+        console.log("ERROR");
+    }
+})})
+    
 
 
 
