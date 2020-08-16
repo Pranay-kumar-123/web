@@ -13,6 +13,10 @@ var userSchema=new mongoose.Schema({
         type:String,
         required:true
     },
+    em: {
+        type:String,
+        required:true
+    },
     age :Number,
     dob :String,
     mobile : String
