@@ -14,7 +14,7 @@ var userSchema=new mongoose.Schema({
         required:true
     },
     age :Number,
-    dob :Date,
+    dob :String,
     mobile : String
 })
 
