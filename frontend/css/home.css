@@ -1,8 +1,9 @@
 body{
     border: 20px solid black;
+    padding: 30px;
     margin-top: 50px;
     margin-left: 20px;
-    background-color: yellow;
+    background-color: rgb(122, 205, 243);
 }
 table,th,tr,td{
    border : 1px solid black;
