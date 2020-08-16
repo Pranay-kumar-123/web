@@ -3,6 +3,7 @@ $(function(){
         var jsondata={
             id:$("#_id").val(),
             name:$("#name").val(),
+            lname:$("#lname").val(),
             age:$("#age").val(),
             mobile:$("#mobile").val()
           }
