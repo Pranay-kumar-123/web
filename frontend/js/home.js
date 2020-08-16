@@ -5,6 +5,7 @@ $(function(){
             name:$("#name").val(),
             lname:$("#lname").val(),
             age:$("#age").val(),
+            dob:$("#dob").val(),
             mobile:$("#mobile").val()
           }
           $.ajax({
@@ -12,14 +13,14 @@ $(function(){
               url:"/api/users/create",
               data: jsondata,
               success: function(){
-                 $("h5").html("SUCCESSFULLY ADDED!!!").hide().fadeIn("slow");
+                 $("h5").html("your data is stored succesfully").hide().fadeIn("slow");
                  setTimeout(() => {
                     location.reload();
                  }, 2000);
                      
               } ,
               error:(err)=>{
-                $("h5").html("FAILED TO ADD!!!").hide().fadeIn(slow);
+                $("h5").html("sorry failed please try again").hide().fadeIn(slow);
                 setTimeout(() => {
                    location.reload();
                 }, 2000);
@@ -42,9 +43,9 @@ $(function(){
 
 
 function display(data){
-    var txt="<table><tr><th>ID</th><th>FIRST NAME</th><th>LAST NAME</th><th>AGE</th><th>MOBILE</th></tr>";
+    var txt="<table><tr><th>ID</th><th>FIRST NAME</th><th>LAST NAME</th><th>AGE</th><th>DOB</th><th>MOBILE</th></tr>";
      for(var i=0;i<data.length;i++){
-         txt+="<tr><td>"+data[i].id+"</td><td>"+data[i].name+"</td><td>"+data[i].lname+"</td><td>"+data[i].age+"</td><td>"+data[i].mobile+"</td"+"</tr>";
+         txt+="<tr><td>"+data[i].id+"</td><td>"+data[i].name+"</td><td>"+data[i].lname+"</td><td>"+data[i].age+"</td><td>"+data[i].dob+"</td><td>"+data[i].mobile+"</td"+"</tr>";
      }
      txt+="</table>";
      $("#table").html(txt);
